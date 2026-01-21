@@ -20,7 +20,7 @@
     --hover-blue: rgb(99, 137, 202);
     --border-gray: rgb(30, 32, 41);
     --background-gray: rgba(255, 255, 255, 0.02);
-    --hover-gray: rgba(255, 255, 255, 0.08);
+    --hover-gray: #ffffff14;
     --gray: rgb(143, 144, 148);
     color: white;
 }
@@ -51,4 +51,48 @@ footer #button-container a button{
 
 footer svg, #contact-card svg{
     fill: var(--blue);
+}
+
+
+
+/* Carousel */
+.carousel{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    display: none;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    animation: spinner 30s infinite linear;
+    padding-right: 3em;
+}
+
+.card{
+    flex: 0 0 3em;
+    height: 3em;
+    font-size: 4rem;
+}
+
+.card img {
+    background-color: var(--hover-gray);
+    border: 1px solid var(--gray);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+@keyframes spinner{
+    from {translate: 0;}
+    to {translate: -100%;}
 }
