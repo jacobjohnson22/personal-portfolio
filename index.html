@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="src/JJ logo.png"/>
+  <title>Jacob Johnson's Portfolio</title>
+  <link href="/src/styles.css" rel="stylesheet">
+</head>
+
+<body class="min-h-[200vh] bg-black">
+
+  <div id="body-container" class="w-3/4 m-auto">
+
+    <div id="nav-container" class="bg-black text-lg font-medium fixed z-50 top-0 left-1/2 transform -translate-x-1/2 w-3/4 border-b border-b-(--border-gray)">
+      <nav>
+        <ul>
+          <div id="nav-grid" class="flex flex-row px-8 py-2">
+            <div id="nav-logo">
+              <li><a href="index.html"><img src="src/JJ logo.png" alt="Logo" class="w-10"></a></li>
+            </div>
+            
+            <div id="nav-links" class="flex gap-4 justify-end w-full items-center">
+              <li class="px-2.5 py-1 rounded-lg transition-all hover:bg-(--hover-gray) cursor-pointer"><a href="index.html"><button class="cursor-pointer">Home</button></a></li>
+              <li class="px-2.5 py-1 rounded-lg transition-all hover:bg-(--hover-gray) cursor-pointer"><a href="projects.html"><button class="cursor-pointer">Projects</button></a></li>
+              <li class="px-2.5 py-1 rounded-lg transition-all hover:bg-(--hover-gray) cursor-pointer"><a href="contact-me.html"><button class="cursor-pointer">Contact Me</button></a></li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="body-grid" class="pt-48 px-8"><!-- pt-16 for perfect lineup below nav -->
+      <header>
+        <h2 class="text-(--blue) text-4xl font-bold">Hi! My name is-</h2>
+        <h1 class="text-8xl font-bold">Jacob Johnson.</h1>
+      </header>
+
+      <h2 class="text-3xl font-bold w-2xl py-10">Studying Computer Science and Artificial Intelligence. <span class="text-(--gray)">A forever-evolving developer with a love for Computer Science.</span></h2>
+      <div id="hero-buttons" class="flex gap-4 pb-56">
+        <a href="projects.html"><button class="text-xl font-medium bg-(--blue) px-8 py-4 rounded-xl transition-all hover:cursor-pointer hover:bg-(--hover-blue) hover:pr-12">View My Work &rarr;</button></a>
+        <a href="contact.html"><button class="text-xl font-medium border border-(--gray) px-8 py-4 rounded-xl transition-all hover:cursor-pointer hover:bg-(--hover-gray)">Get In Touch</button></a>
+      </div>
+
+      <div id="studying-container">
+        <article>
+          <h2 class="text-center text-5xl font-bold pb-4">What I'm Learning</h2>
+          <p class="text-center text-lg text-(--gray) pb-8">Currently expanding my knowledge in these areas</p>
+        </article>
+        <div id="studying-cards-grid">
+          <li>
+            <h3 class="text-4xl">🤖</h3>
+            <h4 class="text-2xl font-bold">Artificial Intelligence</h4>
+            <p class="text-base text-(--gray)">Machine learning, neural networks, and AI fundamentals</p>
+          </li>
+          <li>
+            <h3 class="text-4xl">💻</h3>
+            <h4 class="text-2xl font-bold">Software Development</h4>
+            <p class="text-base text-(--gray)">Building applications and solving complex problems</p>
+          </li>
+          <li>
+            <h3 class="text-4xl">📊</h3>
+            <h4 class="text-2xl font-bold">Data Structures</h4>
+            <p class="text-base text-(--gray)">Algorithms and efficient data organization</p>
+          </li>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

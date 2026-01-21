@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root{
+    --blue: rgb(60, 114, 207);
+    --hover-blue: rgb(99, 137, 202);
+    --border-gray: rgb(30, 32, 41);
+    --hover-gray: rgba(255, 255, 255, 0.08);
+    --gray: rgb(143, 144, 148);
+    color: white;
+}
+
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#studying-cards-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+#studying-cards-grid li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--hover-gray);
+    border: 1px solid var(--gray);
+    padding: 1rem;
+    border-radius: 2rem;
+    min-height: 12rem;
+}
+
+#studying-cards-grid li:hover{
+    border: 1px solid var(--blue);
+    transition: all 0.3s ease;
+}
+
+#studying-cards-grid li:hover h4{
+    color: var(--blue);
+    transition: all 0.3s ease;
+}
