@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
 :root{
+    font-family: "Inter", sans-serif;
+    --fs-xs: clamp(11.11px, 0.11vi + 10.68px, 12.8px);
+    --fs-sm: clamp(13.33px, 0.17vi + 12.65px, 16px);
+    --fs-base: clamp(16px, 0.26vi + 14.98px, 20px);
+    --fs-md: clamp(19.2px, 0.38vi + 17.72px, 25px);
+    --fs-lg: clamp(23.04px, 0.54vi + 20.95px, 31.25px);
+    --fs-xl: clamp(27.65px, 0.75vi + 24.74px, 39.06px);
+    --fs-2xl: clamp(33.18px, 1.02vi + 29.19px, 48.83px);
+    --fs-3xl: clamp(39.81px, 1.39vi + 34.4px, 61.04px);
+    --fs-4xl: clamp(47.78px, 1.86vi + 40.51px, 76.29px);
+    --fs-5xl: clamp(57.33px, 2.49vi + 47.64px, 95.37px);
+    --fs-6xl: clamp(68.8px, 3.29vi + 55.95px, 119.21px);
+
+    --black: rgb(5, 5, 5);
     --blue: rgb(60, 114, 207);
     --hover-blue: rgb(99, 137, 202);
     --border-gray: rgb(30, 32, 41);
+    --background-gray: rgba(255, 255, 255, 0.02);
     --hover-gray: rgba(255, 255, 255, 0.08);
     --gray: rgb(143, 144, 148);
     color: white;
@@ -14,30 +30,25 @@
     list-style-type: none;
 }
 
-#studying-cards-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
-}
-
-#studying-cards-grid li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-    background-color: var(--hover-gray);
-    border: 1px solid var(--gray);
-    padding: 1rem;
-    border-radius: 2rem;
-    min-height: 12rem;
-}
-
-#studying-cards-grid li:hover{
-    border: 1px solid var(--blue);
+.main-transition{
     transition: all 0.3s ease;
 }
 
 #studying-cards-grid li:hover h4{
     color: var(--blue);
-    transition: all 0.3s ease;
+}
+
+footer #button-container a button{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--hover-gray);
+    cursor: pointer;
+}
+
+footer svg, #contact-card svg{
+    fill: var(--blue);
 }

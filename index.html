@@ -8,70 +8,53 @@
   <link href="/src/styles.css" rel="stylesheet">
 </head>
 
-<body class="min-h-[200vh] bg-black">
+<body class="min-h-screen bg-(--black)">
+  <div id="body-container" class="w-full m-auto size sm:w-11/12 xl:w-3/4">
 
-  <div id="body-container" class="w-3/4 m-auto">
+    <div id="nav-container" class="bg-(--black) text-lg font-medium fixed z-50 top-0 left-1/2 transform -translate-x-1/2 w-full border-b border-b-(--border-gray) sm:w-11/12 xl:w-3/4"></div>
+    <script src="/src/navigation.js"></script>
 
-    <div id="nav-container" class="bg-black text-lg font-medium fixed z-50 top-0 left-1/2 transform -translate-x-1/2 w-3/4 border-b border-b-(--border-gray)">
-      <nav>
-        <ul>
-          <div id="nav-grid" class="flex flex-row px-8 py-2">
-            <div id="nav-logo">
-              <li><a href="index.html"><img src="src/JJ logo.png" alt="Logo" class="w-10"></a></li>
-            </div>
-            
-            <div id="nav-links" class="flex gap-4 justify-end w-full items-center">
-              <li class="px-2.5 py-1 rounded-lg transition-all hover:bg-(--hover-gray) cursor-pointer"><a href="index.html"><button class="cursor-pointer">Home</button></a></li>
-              <li class="px-2.5 py-1 rounded-lg transition-all hover:bg-(--hover-gray) cursor-pointer"><a href="projects.html"><button class="cursor-pointer">Projects</button></a></li>
-              <li class="px-2.5 py-1 rounded-lg transition-all hover:bg-(--hover-gray) cursor-pointer"><a href="contact-me.html"><button class="cursor-pointer">Contact Me</button></a></li>
-            </div>
-          </div>
-        </ul>
-      </nav>
-    </div>
-
-    <div id="body-grid" class="pt-48 px-8"><!-- pt-16 for perfect lineup below nav -->
+    <div id="body-grid" class="pt-40 px-4 sm:px-8"><!-- pt-16 for perfect lineup below nav -->
       <header>
-        <h2 class="text-(--blue) text-4xl font-bold">Hi! My name is-</h2>
-        <h1 class="text-8xl font-bold">Jacob Johnson.</h1>
+        <h2 class="text-(--blue) text-2xl font-bold sm:text-4xl">Hi! My name is-</h2>
+        <h1 class="text-5xl font-bold sm:text-8xl">Jacob Johnson.</h1>
       </header>
 
-      <h2 class="text-3xl font-bold w-2xl py-10">Studying Computer Science and Artificial Intelligence. <span class="text-(--gray)">A forever-evolving developer with a love for Computer Science.</span></h2>
+      <h2 class="text-xl font-bold w-full py-8 lg:w-5/6 lg:max-w-2xl sm:text-3xl">Studying Computer Science and Artificial Intelligence. <span class="text-(--gray)">A forever-evolving developer with a love for Computer Science.</span></h2>
       <div id="hero-buttons" class="flex gap-4 pb-56">
-        <a href="projects.html"><button class="text-xl font-medium bg-(--blue) px-8 py-4 rounded-xl transition-all hover:cursor-pointer hover:bg-(--hover-blue) hover:pr-12">View My Work &rarr;</button></a>
-        <a href="contact.html"><button class="text-xl font-medium border border-(--gray) px-8 py-4 rounded-xl transition-all hover:cursor-pointer hover:bg-(--hover-gray)">Get In Touch</button></a>
+        <a href="projects.html"><button class="text-base font-medium bg-(--blue) px-6 py-4 rounded-xl main-transition hover:cursor-pointer hover:bg-(--hover-blue) hover:pr-8 sm:text-lg">View My Work &rarr;</button></a>
+        <a href="contact.html"><button class="text-base font-medium border border-(--gray) px-6 py-4 rounded-xl main-transition hover:cursor-pointer hover:bg-(--hover-gray) sm:text-lg">Get In Touch</button></a>
       </div>
 
       <div id="studying-container">
         <article>
-          <h2 class="text-center text-5xl font-bold pb-4">What I'm Learning</h2>
-          <p class="text-center text-lg text-(--gray) pb-8">Currently expanding my knowledge in these areas</p>
+          <h2 class="text-center text-3xl font-bold pb-4 sm:text-5xl">What I'm Learning</h2>
+          <p class="text-center text-base text-(--gray) pb-8 sm:text-lg">Currently expanding my knowledge in these areas</p>
         </article>
-        <div id="studying-cards-grid">
-          <li>
+        <div id="studying-cards-grid" class="grid grid-rows-3 gap-4 lg:grid-rows-1 lg:grid-cols-3 lg:gap-6">
+          <li class="flex flex-col justify-center gap-2 p-4 rounded-4xl min-h-48 bg-(--background-gray) border border-(--gray) main-transition hover:border-(--blue)">
             <h3 class="text-4xl">🤖</h3>
-            <h4 class="text-2xl font-bold">Artificial Intelligence</h4>
+            <h4 class="text-2xl font-bold main-transition">Artificial Intelligence</h4>
             <p class="text-base text-(--gray)">Machine learning, neural networks, and AI fundamentals</p>
           </li>
-          <li>
+          <li class="flex flex-col justify-center gap-2 p-4 rounded-4xl min-h-48 bg-(--background-gray) border border-(--gray) main-transition hover:border-(--blue)">
             <h3 class="text-4xl">💻</h3>
-            <h4 class="text-2xl font-bold">Software Development</h4>
+            <h4 class="text-2xl font-bold main-transition">Software Development</h4>
             <p class="text-base text-(--gray)">Building applications and solving complex problems</p>
           </li>
-          <li>
+          <li class="flex flex-col justify-center gap-2 p-4 rounded-4xl min-h-48 bg-(--background-gray) border border-(--gray) main-transition hover:border-(--blue)">
             <h3 class="text-4xl">📊</h3>
-            <h4 class="text-2xl font-bold">Data Structures</h4>
+            <h4 class="text-2xl font-bold main-transition">Data Structures</h4>
             <p class="text-base text-(--gray)">Algorithms and efficient data organization</p>
           </li>
         </div>
       </div>
-
     </div>
 
-    </div>
+    <div id="footer-container"></div>
+    <script src="/src/footer.js"></script>
 
   </div>
-
 </body>
 
 </html>
