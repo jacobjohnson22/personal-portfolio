@@ -16,6 +16,7 @@
     --fs-6xl: clamp(68.8px, 3.29vi + 55.95px, 119.21px);
 
     --black: rgb(5, 5, 5);
+    --black-low-opacity: rgba(5, 5, 5, 0.8);
     --blue: rgb(60, 114, 207);
     --hover-blue: rgb(99, 137, 202);
     --border-gray: rgb(30, 32, 41);
