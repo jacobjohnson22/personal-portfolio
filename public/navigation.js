@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
               <a href="index.html">Home</a>
             </li>
             <li class="text-sm px-2.5 py-1 rounded-lg main-transition hover:bg-(--hover-gray) md:text-base xl:text-lg">
-              <a href="projects.html">Projects</a>
+              <a href="/projects.html">Projects</a>
             </li>
             <li class="text-sm px-2.5 py-1 rounded-lg main-transition hover:bg-(--hover-gray) md:text-base xl:text-lg">
-              <a href="contact.html">Contact Me</a>
+              <a href="/contact.html">Contact Me</a>
             </li>
           </div>
         </div>
