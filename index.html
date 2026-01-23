@@ -26,7 +26,7 @@
         <a href="contact.html"><button class="text-base font-medium border border-(--gray) px-6 py-4 rounded-xl main-transition hover:cursor-pointer hover:bg-(--hover-gray) sm:text-lg">Get In Touch</button></a>
       </div>
 
-      <div id="studying-container">
+      <div id="studying-container" class="appear">
         <article>
           <h2 class="text-center text-3xl font-bold pb-4 sm:text-5xl">What I'm Learning</h2>
           <p class="text-center text-base text-(--gray) pb-8 sm:text-lg">Currently expanding my knowledge in these areas</p>
@@ -50,22 +50,22 @@
         </div><!-- close studying-cards-grid -->
       </div><!-- close studying-container -->
 
-      <div class="carousel">
-        <div class="group">
-          <div class="card"><img src="/src/python-logo.svg" alt="Python"></div>
-          <div class="card"><img src="/src/java-logo.svg" alt="Java"></div>
-          <div class="card"><img src="/src/javascript-logo.svg" alt="JavaScript"></div>
-          <div class="card"><img src="/src/react-logo.svg" alt="React"></div>
-          <div class="card"><img src="/src/tailwindcss-logo.svg" alt="Tailwind CSS"></div>
-          <div class="card"><img src="/src/mysql-logo.svg" alt="MySQL"></div>
+      <div id="carousel" class="flex m-auto w-full overflow-x-auto border-t border-b border-(--gray) mt-32 py-4 appear">
+        <div id="group" class="flex justify-center items-center flex-nowrap gap-28 pr-28 slide">
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">Python</div>
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">Java</div>
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">JavaScript</div>
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">React</div>
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">Tailwind CSS</div>
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">MySQL</div>
         </div><!-- close group -->
-        <div aria-hidden class="group">
-          <div class="card"><img src="/src/python-logo.svg" alt="Python"></div>
-          <div class="card"><img src="/src/java-logo.svg" alt="Java"></div>
-          <div class="card"><img src="/src/javascript-logo.svg" alt="JavaScript"></div>
-          <div class="card"><img src="/src/react-logo.svg" alt="React"></div>
-          <div class="card"><img src="/src/tailwindcss-logo.svg" alt="Tailwind CSS"></div>
-          <div class="card"><img src="/src/mysql-logo.svg" alt="MySQL"></div>
+        <div aria-hidden="true" id="group" class="flex justify-center items-center flex-nowrap gap-28 pr-28 slide">
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">Python</div>
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">Java</div>
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">JavaScript</div>
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">React</div>
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">Tailwind CSS</div>
+          <div id="card" class="text-(--gray) font-bold text-2xl min-w-max text-center p-4">MySQL</div>
         </div><!-- close group -->
       </div><!-- close carousel -->
 
