@@ -12,7 +12,7 @@
   <div id="body-container" class="w-full m-auto sm:w-11/12 xl:w-3/4">
 
     <div id="nav-container" class="bg-(--black) text-lg font-medium fixed z-50 top-0 left-1/2 transform -translate-x-1/2 w-full border-b border-b-(--border-gray) sm:w-11/12 xl:w-3/4"></div>
-    <script src="src/navigation.js"></script>
+    <script src="/navigation.js" defer></script>
 
     <div id="body-grid" class="pt-40 px-4 sm:px-8"><!-- pt-16 for perfect lineup below nav -->
       <header>
@@ -26,23 +26,23 @@
         <a href="contact.html"><button class="text-base font-medium border border-(--gray) px-6 py-4 rounded-xl main-transition hover:cursor-pointer hover:bg-(--hover-gray) sm:text-lg">Get In Touch</button></a>
       </div>
 
-      <div id="studying-container" class="appear">
+      <div id="studying-container">
         <article>
           <h2 class="text-center text-3xl font-bold pb-4 sm:text-5xl">What I'm Learning</h2>
           <p class="text-center text-base text-(--gray) pb-8 sm:text-lg">Currently expanding my knowledge in these areas</p>
         </article>
         <div id="studying-cards-grid" class="grid grid-rows-3 gap-4 lg:grid-rows-1 lg:grid-cols-3 lg:gap-6">
-          <li class="flex flex-col justify-center gap-2 p-4 rounded-4xl min-h-48 bg-(--background-gray) border border-(--gray) main-transition hover:border-(--blue)">
+          <li class="appear flex flex-col justify-center gap-2 p-4 rounded-4xl min-h-48 bg-(--background-gray) border border-(--gray) main-transition hover:border-(--blue)">
             <h3 class="text-4xl">🤖</h3>
             <h4 class="text-2xl font-bold main-transition">Artificial Intelligence</h4>
             <p class="text-base text-(--gray)">Machine learning, neural networks, and AI fundamentals</p>
           </li>
-          <li class="flex flex-col justify-center gap-2 p-4 rounded-4xl min-h-48 bg-(--background-gray) border border-(--gray) main-transition hover:border-(--blue)">
+          <li class="appear flex flex-col justify-center gap-2 p-4 rounded-4xl min-h-48 bg-(--background-gray) border border-(--gray) main-transition hover:border-(--blue)">
             <h3 class="text-4xl">💻</h3>
             <h4 class="text-2xl font-bold main-transition">Software Development</h4>
             <p class="text-base text-(--gray)">Building applications and solving complex problems</p>
           </li>
-          <li class="flex flex-col justify-center gap-2 p-4 rounded-4xl min-h-48 bg-(--background-gray) border border-(--gray) main-transition hover:border-(--blue)">
+          <li class="appear flex flex-col justify-center gap-2 p-4 rounded-4xl min-h-48 bg-(--background-gray) border border-(--gray) main-transition hover:border-(--blue)">
             <h3 class="text-4xl">📊</h3>
             <h4 class="text-2xl font-bold main-transition">Data Structures</h4>
             <p class="text-base text-(--gray)">Algorithms and efficient data organization</p>
@@ -72,7 +72,7 @@
     </div><!-- close body-grid -->
 
     <div id="footer-container"></div>
-    <script src="src/footer.js"></script>
+    <script src="/footer.js" defer></script>
 
   </div>
 </body>

@@ -68,7 +68,7 @@ footer svg, #contact-card svg{
 .appear{
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 20%;
 }
 
 @keyframes slider{
